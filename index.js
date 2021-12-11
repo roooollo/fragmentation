@@ -1,3 +1,3 @@
 "use strict";
 
-exports = require("./lib/cjs.js");
+exports.Fragmentation = require("./lib/cjs.js");

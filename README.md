@@ -9,8 +9,8 @@ npm install fragmentation
 Then add the plugin to your `node` server. For example(`koa`):
 
 ```js
-const Fragmentation = require("fragmentation-files");
-const fragmentation = new Fragmentation.upload({ uploadHost });
+const { Fragmentation } = require("fragmentation-files");
+const fragmentation = new Fragmentation({ uploadHost });
 router.post("/upload", async (ctx, next) => {
   const files = ctx.request.files ? ctx.request.files.f1 : [];
   const { token, index } = ctx.request.body;
