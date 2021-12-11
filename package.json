@@ -1,0 +1,33 @@
+{
+  "author": "roooollo",
+  "name": "fragmentation",
+  "description": "Fragmentation for files",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roooollo/fragmentation.git"
+  },
+  "scripts": {
+    "eslint": "eslint",
+    "lint": "npm run eslint -- test lib",
+    "lintfix": "npm run lint -- --fix",
+    "preversion": "npm test",
+    "postversion": "npm publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">= 10"
+  },
+  "files": [
+    "index.js",
+    "lib/*.js"
+  ]
+}
