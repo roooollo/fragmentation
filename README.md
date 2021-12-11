@@ -1,16 +1,16 @@
 ## Getting Started
 
-To begin, you'll need to install `fragmentation`:
+To begin, you'll need to install `fragmentation-files`:
 
 ```console
-npm install fragmentation
+npm install fragmentation-files
 ```
 
 Then add the plugin to your `node` server. For example(`koa`):
 
 ```js
 const { Fragmentation } = require("fragmentation-files");
-const fragmentation = new Fragmentation({ uploadHost });
+const fragmentation = new Fragmentation();
 router.post("/upload", async (ctx, next) => {
   const files = ctx.request.files ? ctx.request.files.f1 : [];
   const { token, index } = ctx.request.body;
