@@ -23,7 +23,7 @@ router.post("/upload", async (ctx, next) => {
     msg = fragmentation.merge({
       token,
       filename,
-      chunkCount,a
+      chunkCount,
       upLoadFolder,
       fileFolder,
     });
